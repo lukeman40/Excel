@@ -189,7 +189,7 @@ for i in range (0, 45):
                         Quantity = round(Quantity / 2) + 0.5
                         
                         if Quantity > 0.99:
-                            Quantity += 0.5
+                            Quantity -= 0.5
             
                         SixMeter = SixMeter + (1 * float(Quantity))
                         shtStructureCutting.cells(i + 10, 7).value = str(1 * float(Quantity)) + " x 6m"
