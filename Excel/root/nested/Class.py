@@ -130,10 +130,17 @@ for i in range (0, 45):
     if Structure_List[i][3] != None:
         
         Quantity = Structure_List[i][6]
+
+
+        # if less than 2 m but we can get them out of a 6m piece
+        if Structure_List[i][3] < 2000 and Structure_List[i][3] > 1525:
+            if Quantity > 1:
+                Dims = 2 * int(Structure_List[i][3])
+                Quantity = Quantity / 2
     
     # creates a Dims of the lenghts which we will use
-
-        Dims = int(Structure_List[i][3])
+        else:
+            Dims = int(Structure_List[i][3])
      
      
  # we only use the following for equation for lengths between 4 & 6m       
