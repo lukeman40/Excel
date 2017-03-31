@@ -12,7 +12,7 @@ class Material:
 #TODO add 293 Eaves Beams etc
 #TODO add error messages if cannot find material
 #TODO put this on git and save as version 0.
-#TODO try and collate when there are multiple 3 quantities of 2.5m bits
+#TODO try and collate when there are multiple 3 quantities of 2.5m bits, e.g if we have a lot left over see if we can use another with a lot left over
            
     def __init__(self, material, stockcode, lengths_available):
         self.material = material
